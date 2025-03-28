@@ -1,4 +1,4 @@
-from idschema import Id
+from zodable_idschema import Id
 from pydantic import BaseModel
 
 # Example of a model with an Id field (int or UUID)

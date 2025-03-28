@@ -3,8 +3,8 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name="zodable-idschema"
-version="1.0.0"
+name="zodable_idschema"
+version="1.0.2"
 description="A simple id schema to support migrating from number to uuid based ids."
 readme = "README.md"
 authors = [{name="Nathan Fallet", email="contact@nathanfallet.me"}]
