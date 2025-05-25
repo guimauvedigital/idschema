@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name="zodable_idschema"
-version="1.0.3"
+version="1.0.4"
 description="A simple id schema to support migrating from number to uuid based ids."
 readme = "README.md"
 authors = [{name="Nathan Fallet", email="contact@nathanfallet.me"}]
@@ -13,3 +13,6 @@ dependencies = [
     "uuid"
 ]
 requires-python=">=3.9"
+
+[tool.setuptools.package-data]
+"zodable_idschema" = ["py.typed"]

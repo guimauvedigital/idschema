@@ -1,3 +1,5 @@
+from uuid import UUID
+
 from zodable_idschema import Id
 from pydantic import BaseModel
 
@@ -10,7 +12,7 @@ class User(BaseModel):
 if __name__ == "__main__":
     user1 = User(id=1, name="John")
     print(user1, user1.model_dump_json())
-    user2 = User(id="e82cd85b-2657-48c0-b3e2-780ddb7976e8", name="John")
+    user2 = User(id=UUID("e82cd85b-2657-48c0-b3e2-780ddb7976e8"), name="John")
     print(user2, user2.model_dump_json())
 
     json_data3 = '{"id": 123, "name": "John"}'
